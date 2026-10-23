@@ -1,6 +1,13 @@
 ---
 name: ai-audience-sim
+display_name: AI 观众模拟
+display_name_en: AI Audience Simulation
 description: This skill should be used when a user wants to test or validate content (short video, article, product page, ad, landing page) BEFORE publishing by simulating how real audience members behave. It applies a 5W scene-analysis framework (Who / Where / When / How / What) plus AI role-play simulation to predict who swipes away vs who stays, replacing meeting-room guesswork with low-cost pre-flight testing. Trigger when users mention "simulate my audience", "test this content before launch", "演/模拟用户", "5W 场景分析", "发布前测试内容", "观众/读者画像", "谁会划走", or want to move beyond generic "user empathy" advice into concrete, testable simulations.
+description_zh: 用 5W 场景分析 + AI 模拟，发布前低成本试错：让 AI 把你的观众演出来，看谁划走、谁停留。
+description_en: Pre-flight test your content: let AI role-play your audience with a 5W scene framework and predict who swipes away vs stays.
+category: writing
+version: 1.0.0
+author: 队友噩梦
 agent_created: true
 ---
 
