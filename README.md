@@ -1,5 +1,61 @@
 # ai-audience-sim
 
+> Stop guessing your audience. Let AI role-play them.
+
+**ai-audience-sim** is a reusable [WorkBuddy](https://www.workbuddy.cn) skill that turns "brainstorming your users" into a low-cost **pre-flight test** for content. Instead of imagining what people want at your desk, you hand an LLM five persona questions and let it simulate many real viewers in the exact scenario where they meet your content — then read out **who swipes away and who stays**, *before you ever publish*.
+
+## The core idea
+
+> Give the AI five questions — **Who / Where they scroll / When / How they scroll / What they subconsciously want** — then have it simulate many people browsing your content in its real scenario, and read out who swipes away and who stays.
+
+Most content fails not because it is made badly, but because the creator "brainstorms the user" — adding filters to themselves and ignoring that the real user is on a subway, muted, thumb-scrolling, deciding in 0.5 seconds. This skill replaces that guesswork with a repeatable method distilled from product-management practice.
+
+Plenty of advice online says "think about your user." Almost none teaches *how to actually test the assumption instead of guessing*. This skill is that missing step.
+
+## Install
+
+This skill runs inside WorkBuddy. Place the folder under your user-level skills directory:
+
+```
+~/.workbuddy/skills/ai-audience-sim/
+```
+
+Or install it via the WorkBuddy skill marketplace / `skill-creator`.
+
+## Workflow (6 steps)
+
+1. **Name the product and the user** — product = one piece of content; user = the person who scrolls past it (not the fan you imagine).
+2. **Build 1–3 concrete personas** — reject "everyone".
+3. **Run the 5W scene analysis** (Who / Where / When / How / What they subconsciously want).
+4. **Simulate with AI** — at 4 contact moments (cover / first 3s / core claim / CTA), role-play the inner monologue and decide stay-or-swipe.
+5. **Synthesize gaps → fix content** — who stays, who leaves, which unspoken thought you missed, and per-segment phrasing direction.
+6. **Calibration loop** — after publishing, feed backend analytics (completion rate, drop-off curve, follower source, audience profile) back in; the next simulation gets sharper.
+
+## Structure
+
+| File | Purpose |
+|---|---|
+| `SKILL.md` | Core workflow and trigger conditions |
+| `references/framework.md` | Full 5W framework, persona template, edge-case catalog, calibration loop |
+| `references/prompts.md` | Copy-paste P1–P4 prompt library (topic / edge / cover / data review) |
+| `assets/simulation_report.md` | Output template for the simulation report |
+
+## Red lines (creator trust)
+
+- **Don't mythologize AI** — it's a simulation tool, not a virality machine. Never promise "guaranteed hit".
+- **Simulation ≠ reality** — every conclusion must be re-checked against platform backend data before decisions.
+- **No clickbait, no anxiety-manufacturing** — respect the author's voice; suggest directions, don't rewrite.
+
+## License
+
+MIT
+
+---
+
+## 中文说明
+
+# ai-audience-sim
+
 > 用 5W 场景分析 + AI 模拟，把"脑补用户"换成"演给用户看"——发布前低成本试错。
 
 大多数内容失败，不是因为做得差，而是创作者在书桌前"脑补"了用户：自动给自己加滤镜，忽略了真实用户正躺在地铁上、静音、拇指快滑、0.5 秒就划走。本技能把产品经理的"发布前用户模拟"纪律蒸馏成可复用工作流：
